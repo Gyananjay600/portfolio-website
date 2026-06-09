@@ -2,7 +2,7 @@
 // API Client for Backend Communication
 // ================================
 
-const API_BASE_URL = 'https://portfolio-website-tc83.onrender.com/api';
+const API_BASE_URL = 'https://portfolio-website-1-fbhb.onrender.com/api';
 
 class ApiClient {
     // Generic GET request
