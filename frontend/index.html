@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Gyana - Software Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button class="theme-btn active" id="lightMode" title="Light Mode">
+            <i class="fas fa-sun"></i>
+        </button>
+        <button class="theme-btn" id="darkMode" title="Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="theme-btn" id="brownMode" title="Brown Mode">
+            <i class="fas fa-leaf"></i>
+        </button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Gyana</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/image.png" alt="Profile Picture">
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm Gyananjay Sahoo</h1>
+            <p class="hero-subtitle">Full-Stack Developer | Java & MERN | Microservices Developer</p>
+            <p class="hero-description">
+                Throughout my academic journey, I have mainly focused on Java development. I have learned Core Java, Advanced Java, Spring Boot, Hibernate, and Java Full-Stack Development. 
+                Currently interning at Thiranex, building modern web applications with Node.js, React, and express.js.
+            </p>
+            <div class="hero-buttons">
+                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Skills Section -->
+    <section class="quick-skills">
+        <div class="container">
+            <h2>My Tech Stack</h2>
+            <div class="skills-grid" id="skillsContainer">
+                <!-- Skills will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid" id="projectsContainer">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gyana. All rights reserved. | Intern at Thiranex</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gyananjay-sahoo/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Gyananjay600" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:gyananjaysahoo8@example.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/apiClient.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* ================================
+   Skill Icons Enhancement
+   ================================ */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.skill-badge {
+    background: linear-gradient(135deg, var(--light-bg), #ffffff);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-badge::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+    transition: var(--transition);
+}
+
+.skill-badge:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.15);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--primary-color);
+    position: relative;
+    z-index: 1;
+}
+
+.skill-badge h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-badge p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    position: relative;
+    z-index: 1;
+}
+
+/* ================================
+   Skill Group Enhancement
+   ================================ */
+.skill-group {
+    background: linear-gradient(135deg, var(--light-bg), #f8fafc);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary-color);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-group::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.skill-group:hover::before {
+    left: 100%;
+}
+
+.skill-group:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-list {
+    position: relative;
+    z-index: 1;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+/* ================================
+   Button Enhancements
+   ================================ */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:active::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
+
+/* ================================
+   Form Enhancement
+   ================================ */
+input, textarea, select {
+    background-color: white;
+    transition: var(--transition);
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: #f8fafc;
+    transform: scale(1.01);
+}
+
+/* ================================
+   Hero Section Enhancement
+   ================================ */
+.hero-image img {
+    transition: var(--transition);
+}
+
+.hero:hover .hero-image img {
+    transform: scale(1.05);
+}
+
+/* ================================
+   Project Card Hover
+   ================================ */
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+
+.project-card:hover::before {
+    left: 100%;
+}
+
+/* ================================
+   Timeline Enhancement
+   ================================ */
+.timeline-item::before {
+    transition: box-shadow 0.3s ease;
+}
+
+.timeline-item:hover::before {
+    box-shadow: 0 0 0 8px var(--secondary-color);
+}
+
+.timeline-content {
+    transition: var(--transition);
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+}

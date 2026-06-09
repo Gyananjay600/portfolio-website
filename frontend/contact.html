@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Gyana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button class="theme-btn active" id="lightMode" title="Light Mode">
+            <i class="fas fa-sun"></i>
+        </button>
+        <button class="theme-btn" id="darkMode" title="Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="theme-btn" id="brownMode" title="Brown Mode">
+            <i class="fas fa-leaf"></i>
+        </button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Gyana</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p class="contact-intro">I'm always interested in hearing about new opportunities and projects. Feel free to reach out!</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <span class="info-label">Email:</span>
+                        <a href="mailto:gyananjaysahoo8@example.com">gyananjaysahoo8@example.com</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Phone:</span>
+                        <a href="tel:+918984096402">+91 8984096402</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Location:</span>
+                        <span>India</span>
+                    </div>
+                    <div class="social-media">
+                        <h3>Follow Me</h3>
+                        <div class="social-links-contact">
+                            <a href="https://www.linkedin.com/in/gyananjay-sahoo/" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                            <a href="https://github.com/Gyananjay600" target="_blank" class="social-icon">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="mailto:gyananjaysahoo8@example.com" class="social-icon">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gyana. All rights reserved. | Intern at Thiranex</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gyananjay-sahoo/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Gyananjay600" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:gyananjaysahoo8@example.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/apiClient.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
